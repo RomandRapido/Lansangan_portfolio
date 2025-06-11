@@ -1,0 +1,7 @@
+GivenAttack,TopDefense
+Phishing,Encryption (121)
+Ransomware,VPN (104)
+Man-in-the-Middle,Firewall (106)
+DDoS,VPN (120)
+SQL Injection,Antivirus (113)
+Malware,Antivirus (111)

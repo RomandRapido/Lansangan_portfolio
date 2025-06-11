@@ -1,0 +1,6 @@
+GivenDefense,TopAttack
+VPN,DDoS (120)
+Firewall,Man-in-the-Middle (106)
+AI-based Detection,DDoS (113)
+Antivirus,SQL Injection (113)
+Encryption,Phishing (121)
