@@ -1,0 +1,57 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: postgres-csv
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: csv_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - csv-network
+
+  # Add Elasticsearch later
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.9
+    container_name: elasticsearch-csv
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false  # Disable security for development
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    volumes:
+      - es_data:/usr/share/elasticsearch/data
+    networks:
+      - csv-network
+
+  # Optional: pgAdmin for GUI management
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: pgadmin-csv
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+    networks:
+      - csv-network
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:
+  es_data:
+
+networks:
+  csv-network:
+    driver: bridge
