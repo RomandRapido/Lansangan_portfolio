@@ -39,6 +39,7 @@ I'm an Applied Mathematics (Data Science) student at Far Eastern University with
 
 - Passionate about: Sports Analytics, Environmental Data Science, and Data Storytelling
 - I love turning complex data into compelling visual stories
+- Based in Quezon City, Philippines
 
 ---
 
@@ -119,21 +120,21 @@ My personal favorite—interactive dashboards and data stories demonstrating com
 
 ---
 
-<img src="images/tableau-2.png" width="700">
+<img src="https://github.com/RomandRapido/Lansangan_portfolio/blob/main/images/tableau-2.PNG?raw=true" width="700">
 
 *Superstore Sales Dashboard*
 
 ---
 
-<img src="images/tableau-3.png" width="700">
+<img src="https://github.com/RomandRapido/Lansangan_portfolio/blob/main/images/tableau-3.PNG?raw=true" width="700">
 
 *The Decline of Chicago's Taxi Industry (2014-2025)*
 
 ---
 
-<img src="images/tableau-4.png" width="700">
+<img src="https://github.com/RomandRapido/Lansangan_portfolio/blob/main/images/tableau-4.PNG?raw=true" width="700">
 
-<img src="images/tableau-5.png" width="700">
+<img src="https://github.com/RomandRapido/Lansangan_portfolio/blob/main/images/tableau-5.PNG?raw=true" width="700">
 
 *Philippine Seismic Activity Dashboard*
 
@@ -176,7 +177,7 @@ Web-scraped NBA player statistics and applied hierarchical clustering to identif
 ### Harmful Algal Blooms: Chlorophyll-a Prediction
 > Multiple Linear Regression model for environmental monitoring
 
-<img src="images/algal-blooms-2.png" width="700">
+<img src="https://github.com/RomandRapido/Lansangan_portfolio/blob/main/images/algal-blooms-2.PNG?raw=true" width="700">
 
 <img src="images/algal-blooms-1.png" width="700">
 
